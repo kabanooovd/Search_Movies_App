@@ -1,0 +1,37 @@
+.superInputContainer {
+    /*padding: 20px;*/
+}
+
+.inputWrapper {
+    display: flex;
+}
+
+.inputStyle {
+    margin: 5px 5px;
+    outline:none;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 20px 0 0 20px;
+    background-color: #262525;
+    border: 1px solid snow;
+    color: #c2bebe;
+}
+
+.btnStyle {
+    margin: 5px 5px;
+    outline:none;
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    border-radius:  0 20px 20px 0 ;
+    background-color: #262525;
+    border: 1px solid snow;
+    color: #c2bebe;
+}
+
+.error {
+    margin: 15px;
+    color: red;
+
+}

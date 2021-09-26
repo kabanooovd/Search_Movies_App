@@ -1,0 +1,7 @@
+.InfoColumnFrame {
+    border: 1px solid snow;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}

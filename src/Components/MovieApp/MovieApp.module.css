@@ -1,0 +1,13 @@
+.InfoBlockWrapper {
+    padding: 20px;
+    border: 1px solid snow;
+    width: 1000px;
+    min-height: 500px;
+    background: rgba(0, 0, 10, 0.8)
+}
+
+.InfoBlock {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

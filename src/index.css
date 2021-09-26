@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url("https://cdn.hipwallpaper.com/i/33/91/R9FhOd.png");
+  color: snow;
+
 }
 
 code {

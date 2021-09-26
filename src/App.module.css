@@ -1,0 +1,11 @@
+.AppStyles {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.SI_positionStyle {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
