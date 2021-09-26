@@ -1,14 +1,17 @@
 import React from "react";
 import s from "./Poster.module.css";
-
-const unRecognizedImage = 'https://i1.wp.com/strategicfinancialpartners.com/wp-content/uploads/2019/10/Placeholder.png?resize=1200%2C1200&ssl=1'
+import {useSelector} from "react-redux";
+import {RootReducer_T} from "../../bll/store";
+import {BaseReceivedDataType, unRecognizedImage} from "../../bll/searchMovieReducer";
 
 export const Poster = () => {
+
+    const CurrentPoster = useSelector<RootReducer_T, BaseReceivedDataType>(state => state.moviesData).Poster
 
     return(
         <div className={s.PosterFrame}>
 
-            <img src={unRecognizedImage}
+            <img src={CurrentPoster !== "N/A" ? CurrentPoster : unRecognizedImage}
                  className={s.Poster}
             />
 

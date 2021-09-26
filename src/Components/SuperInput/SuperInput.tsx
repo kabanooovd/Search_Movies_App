@@ -1,8 +1,13 @@
 import React, {useState} from "react";
 import s from './SuperInput.module.css'
+import {searchMovie_TC} from "../../bll/searchMovieReducer";
+import {useDispatch} from "react-redux";
 
 
 export const SuperInput = () => {
+
+    const dispatch = useDispatch()
+
     const [text, setText] = useState<string>('')
     const [error, setError] = useState<boolean>(false)
     const changeTextHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -10,7 +15,7 @@ export const SuperInput = () => {
         setError(false)
     }
     const searchHandler = () => {
-
+        dispatch(searchMovie_TC(text))
     }
     const EnterByPress = (e: React.KeyboardEvent<HTMLInputElement>) => e.key === 'Enter' && searchHandler()
 
